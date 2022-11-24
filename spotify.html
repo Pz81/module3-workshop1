@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
-    <link href="/assets/css/carousel.css" rel="stylesheet" />
+    <link href="assets/images/style.css" rel="stylesheet" />
 </head>
 <body>
     <div class="flex-container">
-        <div><button onclick="previous();">Prev</button></div>
-        <div><img data-song-id="Plants vs Zobies Garden Warfare" src="/assets/images/Garden_Warfare_cover_art.png" width="250" height="250" id="plaatje1"></div>
-        <div><img data-song-id="disney infinity" src="/assets/images/disney infinity.png" width="250" height="250" id="plaatje1"></div>
-        <div><img data-song-id="Skylanders" src="/assets/images/Skylanders.png" width="250" height="250" id="plaatje2"></div>
-        <div style="background-b(0, 255, 21);"><img data-song-id="canttouchthis" src="/assets/images/canttouchthis.png" width="250" height="250" id="plaatje3"></div>  
-        <div><img data-song-id="Ark Survival Evolved" src="/assets/images/Ark Survival Evolved.png" width="250" height="250" id="plaatje4"></div>  
-        <div><img data-song-id="Megalovania" src="/assets/images/Megalovania.png" width="250" height="250" id="plaatje5"></div>  
-        <div><button onclick="next();">Next</button></div>
+        <div class="images"><button onclick="previous();">Prev</button></div>
+        <div class="images"><img data-song-id="Plants vs Zobies Garden Warfare" src="/assets/images/Garden_Warfare_cover_art.png" width="250" height="250" id="plaatje1"></div>
+        <div class="images"><img data-song-id="disney infinity" src="/assets/images/disney-infinity-cover.webp" width="250" height="250" id="plaatje1"></div>
+        <div class="images"><img data-song-id="Skylanders" src="/assets/images/SI_Wii_SkylandersSpyrosAdventure_image1600w.jpg" width="250" height="250" id="plaatje2"></div>
+        <div class="images"><img data-song-id="Ark Survival Evolved" src="/assets/images/ark-survival-evolved-xbox-one-xbox-series-x-s-xbox-series-x-s-xbox-one-spel-microsoft-store-united-states-cover.webp" width="250" height="250" id="plaatje4"></div>  
+        <div class="images"><img data-song-id="Megalovania" src="/assets/images/7bc6c3a319466d424971f432933dc043.png" width="250" height="250" id="plaatje5"></div>  
+        <div class="images"><button onclick="next();">Next</button></div>
     </div> 
-
+<div class="audio">
     <audio controls id="pvz garden Warfare">
-        <source src="/assets/audio/SnapSave.io-Plants Vs. Zombies Garden Warfare - Main Menu Theme Song-(128kbps).ogg" type="audio/ogg">
-        <source src="/assets/audio/SnapSave.io-Plants Vs. Zombies Garden Warfare - Main Menu Theme Song-(128kbps).mp3" type="audio/mpeg">
-    </audio>
-    <audio id="disney infinity,">
-        <source src="/assets/audio/SnapSave.io-Disney Infinity 3.0 (Soundtrack) - Main Menu Music-(128kbps).ogg" type="audio/ogg">
-        <source src="/assets/audio/SnapSave.io-Disney Infinity 3.0 (Soundtrack) - Main Menu Music-(128kbps).mp3" type="audio/mpeg">
-    </audio>
-    <audio id="Skylanders">
-        <source src="/assets/audio/SnapSave.io - Skylanders Main Theme (feat. Miriam Stockley) (128 kbps).ogg" type="audio/ogg">
-        <source src="/assets/audio/SnapSave.io - Skylanders Main Theme (feat. Miriam Stockley) (128 kbps).mp3" type="audio/mpeg">
-    </audio>
-    <audio id="Ark Survival Evolved">
-        <source src="/assets/audio/SnapSave.io - ARK Survival Evolved - Main Theme Music (128 kbps).ogg" type="audio/ogg">
-        <source src="/assets/audio/SnapSave.io - ARK Survival Evolved - Main Theme Music (128 kbps).mp3" type="audio/mpeg">
-    </audio>
-    <audio id="Megalovania">
-        <source src="/assets/audio/SnapSave.io-Undertale - Megalovania-(128kbps).ogg" type="audio/ogg">
-        <source src="/assets/audio/SnapSave.io-Undertale - Megalovania-(128kbps).mp3" type="audio/mpeg">
-    </audio>
+    <source src="/assets/audio/SnapSave.io-Plants Vs. Zombies Garden Warfare - Main Menu Theme Song-(128kbps).ogg" type="audio/ogg">
+    <source src="/assets/audio/SnapSave.io-Plants Vs. Zombies Garden Warfare - Main Menu Theme Song-(128kbps).mp3" type="audio/mpeg">
+</audio>
+<audio controls id="disney infinity,">
+    <source src="/assets/audio/SnapSave.io-Disney Infinity 3.0 (Soundtrack) - Main Menu Music-(128kbps).ogg" type="audio/ogg">
+    <source src="/assets/audio/SnapSave.io-Disney Infinity 3.0 (Soundtrack) - Main Menu Music-(128kbps).mp3" type="audio/mpeg">
+</audio>
+<audio controls id="Skylanders">
+    <source src="/assets/audio/SnapSave.io - Skylanders Main Theme (feat. Miriam Stockley) (128 kbps).ogg" type="audio/ogg">
+    <source src="/assets/audio/SnapSave.io - Skylanders Main Theme (feat. Miriam Stockley) (128 kbps).mp3" type="audio/mpeg">
+</audio>
+<audio controls id="Ark Survival Evolved">
+    <source src="/assets/audio/SnapSave.io - ARK Survival Evolved - Main Theme Music (128 kbps).ogg" type="audio/ogg">
+    <source src="/assets/audio/SnapSave.io - ARK Survival Evolved - Main Theme Music (128 kbps).mp3" type="audio/mpeg">
+</audio>
+<audio controls id="Megalovania">
+    <source src="/assets/audio/SnapSave.io-Undertale - Megalovania-(128kbps).ogg" type="audio/ogg">
+    <source src="/assets/audio/SnapSave.io-Undertale - Megalovania-(128kbps).mp3" type="audio/mpeg">
+</audio>
+</div>
+   
 
     <script>
         function previous() {
